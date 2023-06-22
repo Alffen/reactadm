@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React Adm</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/summernote/summernote-bs4.min.css">
+
+  <!--jQuery dependency, any stable version of jQuery-->
+  <script src="%PUBLIC_URL%/plugins/jquery/jquery.js"></script>
+
+  <!--jQueryUI version 1.11.4 -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/jquery-ui/jquery-ui.css" />
+  <script src="%PUBLIC_URL%/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+  <!--ParamQuery Grid css files-->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/pqgrid/pqgrid.min.css" />
+
+  <!--add pqgrid.ui.css for jQueryUI theme support-->
+  <link rel="stylesheet" href="%PUBLIC_URL%/plugins/pqgrid/pqgrid.ui.min.css" />
+
+  <!--ParamQuery Grid custom theme e.g., office, bootstrap, rosy, chocolate, etc (optional)-->
+  <!--<link rel="stylesheet" href="path to custom theme pqgrid.css" />-->
+
+  <!--Include jsZip file (v2.5.0) before pqgrid js file to support xlsx and zip export (optional)-->
+  <script type="text/javascript" src="%PUBLIC_URL%/plugins/pqgrid/jsZip-2.5.0/jszip.min.js"></script>
+
+  <!--ParamQuery Grid js files-->
+  <script type="text/javascript" src="%PUBLIC_URL%/plugins/pqgrid/pqgrid.min.js"></script>
+
+  <!--ParamQuery Grid localization file-->
+  <script src="%PUBLIC_URL%/plugins/pqgrid/localize/pq-localize-en.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+
+  <script src="https://unpkg.com/pqgridf@3.5.1/pqgrid.min.js"></script>
+
+  <script src="https://unpkg.com/pqgridf@3.5.1/localize/pq-localize-en.js"></script>
+
+  <script src="https://unpkg.com/pqgridf@3.5.1/localize/pq-localize-ja.js"></script>
+
+  <script src="https://unpkg.com/pqgridf@3.5.1/localize/pq-localize-tr.js"></script>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js"
+    crossorigin
+  ></script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    crossorigin
+  ></script>
+
+  <!--Include pqTouch file to provide support for touch devices (optional)-->
+  <!--<script type="text/javascript" src="plugins/pqgrid/path to pqtouch.min.js" ></script>     -->
+
+</head>
+
+<body class="hold-transition sidebar-mini layout-navbar-fixed">
+
+  <div id="root"></div>
+
+
+  <!-- Bootstrap 4 -->
+  <script src="%PUBLIC_URL%/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- ChartJS -->
+  <script src="%PUBLIC_URL%/plugins/chart.js/Chart.min.js"></script>
+  <!-- Sparkline -->
+  <script src="%PUBLIC_URL%/plugins/sparklines/sparkline.js"></script>
+  <!-- JQVMap -->
+  <script src="%PUBLIC_URL%/plugins/jqvmap/jquery.vmap.min.js"></script>
+  <script src="%PUBLIC_URL%/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="%PUBLIC_URL%/plugins/jquery-knob/jquery.knob.min.js"></script>
+  <!-- daterangepicker -->
+  <script src="%PUBLIC_URL%/plugins/moment/moment.min.js"></script>
+  <script src="%PUBLIC_URL%/plugins/daterangepicker/daterangepicker.js"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="%PUBLIC_URL%/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- Summernote -->
+  <script src="%PUBLIC_URL%/plugins/summernote/summernote-bs4.min.js"></script>
+  <!-- overlayScrollbars -->
+  <script src="%PUBLIC_URL%/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="%PUBLIC_URL%/dist/js/adminlte.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="%PUBLIC_URL%/dist/js/demo.js"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+  <script src="%PUBLIC_URL%/dist/js/pages/dashboard.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      //Enable check and uncheck all functionality
+      $('.checkbox-toggle').click(function () {
+        var clicks = $(this).data('clicks')
+        if (clicks) {
+          //Uncheck all checkboxes
+          $('.mailbox-messages input[type=\'checkbox\']').prop('checked', false)
+          $('.checkbox-toggle .far.fa-check-square').removeClass('fa-check-square').addClass('fa-square')
+        } else {
+          //Check all checkboxes
+          $('.mailbox-messages input[type=\'checkbox\']').prop('checked', true)
+          $('.checkbox-toggle .far.fa-square').removeClass('fa-square').addClass('fa-check-square')
+        }
+        $(this).data('clicks', !clicks)
+      })
+
+      //Handle starring for font awesome
+      $('.mailbox-star').click(function (e) {
+        e.preventDefault()
+        //detect type
+        var $this = $(this).find('a > i')
+        var fa = $this.hasClass('fa')
+
+        //Switch states
+        if (fa) {
+          $this.toggleClass('fa-star')
+          $this.toggleClass('fa-star-o')
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
+<!-- <script>
+  $(function () {
+
+    //JSON data (array of objects) can be defined locally 
+    //or might be a response from an AJAX call from web server/service.
+    var data = [
+      { company: 'Exxon Mobil', revenues: 339938.0, profits: 36130.0 },
+      { company: 'Wal-Mart Stores', revenues: 315654.0, profits: 11231.0 },
+      { company: 'Royal Dutch Shell', revenues: 306731.0, profits: 25311.0 },
+      { company: 'BP', revenues: 267600.0, profits: 22341.0 },
+      { company: 'General Motors', revenues: 192604.0, profits: -10567.0 },
+      { company: 'Chevron', revenues: 189481.0, profits: 14099.0 },
+      { company: 'DaimlerChrysler', revenues: 186106.3, profits: 3536.3 },
+      { company: 'Toyota Motor', revenues: 185805.0, profits: 12119.6 },
+      { company: 'Ford Motor', revenues: 177210.0, profits: 2024.0 },
+      { company: 'ConocoPhillips', revenues: 166683.0, profits: 13529.0 },
+      { company: 'General Electric', revenues: 157153.0, profits: 16353.0 },
+      { company: 'Total', revenues: 152360.7, profits: 15250.0 },
+      { company: 'ING Group', revenues: 138235.3, profits: 8958.9 },
+      { company: 'Citigroup', revenues: 131045.0, profits: 24589.0 },
+      { company: 'AXA', revenues: 129839.2, profits: 5186.5 },
+      { company: 'Allianz', revenues: 121406.0, profits: 5442.4 },
+      { company: 'Volkswagen', revenues: 118376.6, profits: 1391.7 },
+      { company: 'Fortis', revenues: 112351.4, profits: 4896.3 },
+      { company: 'Crédit Agricole', revenues: 110764.6, profits: 7434.3 },
+      { company: 'American Intl. Group', revenues: 108905.0, profits: 10477.0 }
+    ];
+
+    //array of columns.
+    var colModel = [
+      {
+        title: "Company", //title of column.
+        width: 200, //initial width of column
+        dataType: "string", //data type of column
+        dataIndx: "company" //should match one of the keys in row data.
+      },
+      {
+        title: "Revenues ($ millions)",
+        width: 150,
+        dataType: "float",
+        align: "right",
+        dataIndx: "revenues"
+      },
+      {
+        title: "Profits ($ millions)",
+        width: 150,
+        dataType: "float",
+        align: "right",
+        dataIndx: "profits"
+      }
+    ];
+
+    //main object to be passed to pqGrid constructor.    
+    var obj = {
+      colModel: colModel,
+      height: 770,
+      scrollModel: { autoFit: true },
+      dataModel: { data: data }
+    };
+
+    $("#grid_json").pqGrid(obj);
+
+  });        
+</script> -->
